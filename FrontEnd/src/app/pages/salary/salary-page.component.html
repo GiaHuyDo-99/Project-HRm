@@ -1,0 +1,74 @@
+<div class="container-content">
+    <div class="header">
+        <div class="name">Lương</div>
+        <div class="search w-50">
+            <img
+                src="assets/svg/hrm-icon-search.svg"
+                alt=""
+            />
+            <input
+                type="search"
+                placeholder="Tìm kiếm..."
+                class="hrm-input-search"
+            />
+        </div>
+    </div>
+    <div class="manager">
+        <div class="month">
+            <span>Tháng</span>
+            <input
+                type="month"
+                id="start"
+                name="start"
+            />
+        </div>
+        <div class="list-icon-employee">
+            <img
+            (click)="openDialogAdd()"
+            src="assets/svg/green-dot.svg"
+        />
+        </div>
+        <div class="salary"> 
+            <button class="hrm-btn-excel"(click)="exportexcel()">Xuất Excel</button>
+        </div>
+    </div>
+    <div class="table-salary">
+        <table class="hrm-table" id="excel-table" >
+            <thead class="table-head">
+                <tr>
+                    <th> ID Employee</th>
+                    <th> First Name</th>
+                    <th> Last Name </th>
+                    <th> Email</th>
+                    <th>Basic Salary</th>
+                    <th>Bonous</th>
+                    <th>Total Salary</th>
+                    <th> Actions </th>
+                </tr>
+            </thead>
+
+            <tbody class="scroll">
+                <tr *ngFor = "let i of salary" >
+                    <td>{{i.id}}</td>
+                    <td> {{ i.firstName }} </td>
+                    <td> {{ i.lastName }} </td>
+                    <td> {{ i.email }} </td>
+                    <td> {{ i.basicSalary }} </td>
+                    <td > {{ i.bonusSalary }} </td>
+                    <td> {{ i.totalSalary }} </td>
+                    <td>
+                       
+                        <button (click) = "deleteSalary(i.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="total">
+        <div class="salary-total">
+            <span>Tổng: </span>
+            <div class="detail">200.320.000 VNĐ</div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,5 @@
+<svg id="_close" data-name=" close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="Path" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  <circle id="Ellipse_7" data-name="Ellipse 7" cx="12" cy="12" r="12" fill="#fff"/>
+  <path id="Icon" d="M291.919,3482.8l-3.987,3.987,3.987,3.987a.813.813,0,0,1-1.15,1.15l-3.987-3.987-3.987,3.987a.813.813,0,1,1-1.15-1.15l3.987-3.987-3.987-3.987a.813.813,0,1,1,1.15-1.149l3.987,3.987,3.987-3.979a.81.81,0,0,1,1.15,1.141Z" transform="translate(-274.782 -3475.092)" fill="#292929"/>
+</svg>

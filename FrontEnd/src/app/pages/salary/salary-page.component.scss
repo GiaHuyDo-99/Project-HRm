@@ -1,0 +1,157 @@
+.container-content {
+  position: relative;
+  height: 100%;
+  .header {
+    display: flex;
+    flex-direction: row;
+    .name {
+      font-size: 32px;
+      color: white;
+      font-weight: bold;
+      margin-right: 3.5em;
+      padding: 5px;
+    }
+    .search {
+      position: relative;
+      img {
+        position: absolute;
+        margin: 20px;
+      }
+      input {
+        padding: 0 20px 0 55px;
+      }
+    }
+  }
+  .manager {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    align-items: center;
+    .month {
+      
+      height: 60px;
+      border-radius: 20px;
+      margin-right: 20px;
+      background-color: #292929;
+      span {
+        color: white;
+        font-weight: 500;
+        line-height: 60px;
+        margin: 0 15px;
+      }
+      input {
+        background: none;
+        border: none;
+        font-weight: bold;
+        color: #f0de9f;
+      }
+    }
+    .position {
+      width: 180px;
+      height: 45px;
+      border-radius: 20px;
+      text-align: center;
+      border: 1px solid white;
+      span {
+        color: white;
+        line-height: 45px;
+      }
+    }
+    .salary {
+      position: absolute;
+      right: 0;
+      width: 180px;
+      height: 40px;
+      font-weight: bold;
+      border-radius: 20px;
+      justify-content: space-between;
+      // background-image: linear-gradient(to right, #f0de9f, #bdaf7e, #786f50);
+      text-align: center;
+      line-height: 40px;
+    }
+  }
+  .table-salary {
+    .table-head{
+      border-bottom: 1px solid;
+    }
+    width: 100%;
+    table {
+      .scroll{
+        height: 100px;
+        overflow: auto;
+      }
+      background: none !important;
+      .show{
+        opacity: 1;
+      }
+      .hidden{
+        opacity: 0.5;
+      }
+      .name {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px;
+        justify-content: center;
+        img {
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          margin: 0 15px;
+        }
+        input {
+          width: 16px;
+          height: 16px;
+        }
+      }
+      td:nth-child(6) {
+        color: #95bc6e;
+      }
+      td:nth-child(5) {
+        color: #d15151;
+      }
+      .salary {
+        display: flex;
+        justify-content: center;
+        img {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+  .total{
+    width: 100%;
+    display: flex;
+    height: 100px;
+    position: absolute;
+    bottom: -40px;
+    justify-content: flex-end;
+    // background-color: #383838;
+    .salary-total{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      color: #95BC6E;
+      align-items: center;
+      justify-content: flex-end;
+      span{
+        margin: 0 20px;
+      }
+      .detail{
+        width: 250px;
+        height: 56px;
+        background-image: linear-gradient(to right, #93BC6F, #B1B963);
+        color: white;
+        font-weight: bold;
+        border-radius: 20px;
+        text-align: center;
+        line-height: 56px;
+        margin-right: 20px;
+      }
+    }
+
+  }
+}

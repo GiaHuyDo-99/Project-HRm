@@ -1,0 +1,65 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Create Workday </h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label> Tên</label>
+            <input type="text" class ="form-control" id = "fullName"
+                [(ngModel)] = "workday.fullName" name = "fullName">
+        </div>
+    
+        <div class="form-group">
+            <label> Mã NV</label>
+            <input type="text" class ="form-control" id = "employeeID"
+                [(ngModel)] = "workday.employeeID" name = "employeeID">
+        </div>
+
+        <div class="form-group">
+            <label> Công chuẩn</label>
+            <input type="text" class ="form-control" id = "basicWorkday"
+                [(ngModel)] = "workday.basicWorkday" name = "basicWorkday">
+        </div>
+        <div class="form-group">
+            <label>Công thực</label>
+            <input type="text" class ="form-control" id = "actualWorkday"
+                [(ngModel)] = "workday.actualWorkday" name = "actualWorkday">
+        </div>
+    
+        <div class="form-group">
+            <label>Nghỉ phép</label>
+            <input type="text" class ="form-control" id = "leaveDay"
+                [(ngModel)] = "workday.leaveDay" name = "leaveDay">
+        </div>
+            
+        <div class="form-group">
+            <label> Nghỉ không lương</label>
+            <input type="text" class ="form-control" id = "unpaidLeaveDay"
+                [(ngModel)] = "workday.unpaidLeaveDay" name = "unpaidLeaveDay">
+        </div>
+            
+        <div class="form-group">
+            <label> Công lễ</label>
+            <input type="text" class ="form-control" id = "restWorkday"
+                [(ngModel)] = "workday.restWorkday" name = "restWorkday">
+        </div>
+            
+        <div class="form-group">
+            <label> Sớm,muộn</label>
+            <input type="text" class ="form-control" id = "earlyLate"
+                [(ngModel)] = "workday.earlyLate" name = "earlyLate">
+        </div>
+        <div class="form-group">
+            <label> Công OT</label>
+            <input type="text" class ="form-control" id = "workdayOT"
+                [(ngModel)] = "workday.workdayOT" name = "workdayOT">
+        </div>
+        <div class="form-group">
+            <label> Số phép còn</label>
+            <input type="text" class ="form-control" id = "restLeave"
+                [(ngModel)] = "workday.restLeave" name = "restLeave">
+        </div>
+    
+        <button class = "btn btn-success" type ="submit">Submit</button>
+    
+    </form>
+    </div> 

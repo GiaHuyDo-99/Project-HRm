@@ -1,0 +1,65 @@
+.dialog {
+    &-create-employee {
+        mat-dialog-container {
+            padding: 30px !important;
+            background-color: #1a1a1a;
+            border-radius: 20px !important;
+            position: absolute;
+            top: 11%;
+            left: 26.5%;
+            color: #ffffff;
+            width: 55% !important;
+            height: 75% !important;
+            overflow: hidden;
+        }
+
+    }
+    &-create-workdays {
+        mat-dialog-container {
+            padding: 30px !important;
+            background-color: #1a1a1a;
+            border-radius: 20px !important;
+            position: absolute;
+            top: 5%;
+            left: 26.5%;
+            color: #ffffff;
+            width: 55% !important;
+            height: 90% !important;
+            overflow: hidden;
+        }
+    }
+    &-add-salary {
+        mat-dialog-container {
+            padding: 30px !important;
+            background-color: #1a1a1a;
+            border-radius: 20px !important;
+            // position: absolute;
+            width: 550px !important;
+            color: #ffffff;
+            height: 75% !important;
+            overflow: hidden;
+            // transform: unset !important;
+            // transform: translate(-50%,-50%) !important;
+            // top: 50%;
+            // left: 50%;
+        }
+    }
+    &-minus-salary {
+        mat-dialog-container {
+            padding: 30px !important;
+            background-color: #1a1a1a;
+            border-radius: 20px !important;
+            position: absolute;
+            top: 16%;
+            left: 32.5%;
+            width: 772px !important;
+            height: 80% !important;
+        }
+    }
+}
+.text-dialog {
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 3px;
+}

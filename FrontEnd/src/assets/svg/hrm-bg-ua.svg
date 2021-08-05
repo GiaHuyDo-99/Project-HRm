@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="367.242" height="240.034" viewBox="0 0 367.242 240.034">
+  <defs>
+    <linearGradient id="linear-gradient" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#c9785f"/>
+      <stop offset="1" stop-color="#a54d4d"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="0.5" y1="1" x2="0.5" y2="0" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Group_4682" data-name="Group 4682" transform="translate(-193 -137.966)">
+    <rect id="Rectangle_2866" data-name="Rectangle 2866" width="367" height="240" rx="30" transform="translate(193 138)" fill="url(#linear-gradient)"/>
+    <path id="Intersection_9" data-name="Intersection 9" d="M3.426,189.033A30.3,30.3,0,0,1,0,188.84a82.416,82.416,0,0,1,4.994-22.55c11.64-31.745,32.274-41.269,125.392-52.379s74.072-32.8,138.092-86.242C291.325,8.6,316.936,1.387,340.427,0V159.034a30,30,0,0,1-30,30Z" transform="translate(533.427 326.999) rotate(180)" fill="url(#linear-gradient-2)"/>
+    <path id="Intersection_8" data-name="Intersection 8" d="M263.892,180.41C199.873,126.973,226.327,96.816,133.208,85.7S14.693,59.251,3.053,27.506A48.549,48.549,0,0,1,.462,3.886,29.861,29.861,0,0,1,15.242,0h307a30,30,0,0,1,30,30V206.712a67.538,67.538,0,0,1-20.125,3.006C314.421,209.719,291.177,203.186,263.892,180.41Z" transform="translate(208 138.281)" fill="url(#linear-gradient-3)"/>
+  </g>
+</svg>

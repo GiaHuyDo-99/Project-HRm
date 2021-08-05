@@ -1,0 +1,69 @@
+<div class="hrm-employee">
+    <div class="row">
+        <div class="hrm-title-page col-2">Nhân Viên</div>
+        <div class="input-search col-6">
+            <input
+                type="search"
+                class="hrm-input-search"
+                placeholder="search"
+            />
+        </div>
+        <div class="col-4"></div>
+    </div>
+    <div class="list-icon-employee">
+        <div>
+            <img
+            (click)="openDialog()"
+            src="assets/svg/hrm-icon-add-employee.svg"
+        />
+         <!-- <img src="assets/svg/hrm-icon-delele-employee.svg" />
+        <img src="assets/svg/hrm-icon-edit-empoyee.svg" /> -->
+        </div>
+      <div>
+        <button class="hrm-btn-excel"(click)="exportexcel()">Xuất Excel</button>
+      </div>
+       
+      
+    </div>
+    <div class="container-pages">
+        <div>
+            <table class="hrm-table hrm-table-employee" id="excel-table" >
+                <thead>
+                    <tr>
+                        <th> ID Employee</th>
+                        <th> First Name</th>
+                        <th> Last Name </th>
+                        <th>Role</th>
+                        <th>Date Created</th>
+                   
+                        <th> Email Id</th>
+                        <th> Address</th>
+                        <th> Bank Id</th>
+                        <th> Bank Name</th>
+                        <th> Actions </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor = "let employee of employees" >
+                        <td> {{ employee.id }} </td>
+                        <td> {{ employee.firstName }} </td>
+                        <td> {{ employee.lastName }} </td>
+                        <td>{{employee.role}}</td>
+                        <td>{{employee.dateCreated}}</td>
+                        <td> {{ employee.emailId }} </td>
+                        <td> {{ employee.address }} </td>
+                        <td> {{ employee.bankId }} </td>
+                        <td> {{ employee.bankName }} </td>
+              
+                        <td>
+                           
+                            <button (click) = "deleteEmployee(employee.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                            
+                          
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

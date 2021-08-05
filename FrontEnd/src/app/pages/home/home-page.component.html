@@ -1,0 +1,118 @@
+<div class="hrm-home-page">
+    <div class="hrm-title-page">
+        <div>Dashboard</div>
+    </div>
+    <div class="container-pages">
+        <div class="header">
+            <div class="name-company">
+                <div class="details-title">
+                    <div>
+                        <img
+                            src="assets/svg/hrm-icon-home-page.svg"
+                            class="logo"
+                        />
+                    </div>
+                    <div>
+                        <div class="text-media">IFI Solution</div>
+                        <div class="text-date">{{currentDate | date:'dd-MM-yyyy'}}</div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="dashboard leave-early"
+                routerLink="/home/leftEarly"
+            >
+                <div class="details-title">
+                    <img src="assets/svg/hrm-icon-tle.svg" />
+                    <div class="text-title">
+                        Đi muộn, về sớm
+                    </div>
+                </div>
+                <div class="number-employee">
+                    05
+                </div>
+            </div>
+            <div
+                class="dashboard not-allowed"
+                routerLink="/home/not-allowed"
+            >
+                <div class="details-title">
+                    <img src="assets/svg/hrm-icon-not-allowed.svg" />
+                    <div class="text-title">
+                        Nghỉ không phép
+                    </div>
+                </div>
+                <div class="number-employee">0</div>
+            </div>
+            <div
+                class="dashboard allowed"
+                routerLink="/home/allowed"
+            >
+                <div class="details-title">
+                    <img src="assets/svg/hrm-icon-allowed.svg" />
+                    <div class="text-title">Nghỉ có phép</div>
+                </div>
+                <div class="number-employee">
+                    04
+                </div>
+            </div>
+        </div>
+        <div class="row hrm-p-t-40">
+            <div class="col-6 col-left">
+                <div class="overall">
+                    <div class="title">Thống Kê</div>
+                    <ul>
+                        <li>Nhân viên mới, cũ</li>
+                        <li>Thu chi hàng tháng</li>
+                        <li>Tỉ lệ đi làm đúng giờ</li>
+                        <li>Hợp đồng</li>
+                        <li>Liên hệ nhà cung cấp</li>
+                    </ul>
+                    <div class="hrm-btn-contact">Liên hệ nhà cung cấp</div>
+                </div>
+                <img
+                    class="img-home-statistical"
+                    src="assets/svg/hrm-home-statistical.svg"
+                />
+            </div>
+            <div class="col-6 col-right">
+                <div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div class="overall-title">
+                            <img src="assets/svg/hrm-icon-leave.svg" /> Đơn Xin nghỉ
+                        </div>
+                        <div  (click)="openDialog()"> 
+                            <img src="assets/svg/green-dot.svg" />
+                        </div>
+                    </div>
+                   
+                    <table class="hrm-table">
+                        <thead>
+                            <tr>
+                                <th
+                                    colspan="2"
+                                    class="th-title-table"
+                                >Tên</th>
+                                <th class="th-title-table">Nội dung</th>
+                                <th class="th-title-table">Thời gian</th>
+                        
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr  *ngFor = "let i of employeeLeave">
+                                <td> {{i.fullName}}</td>
+                                <td>{{i.content}}</td>
+                                <td>{{i.time}}</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+                <div class="birthday-content">
+                    <img src="assets/svg/hrm-icon-birthday.svg" /> Hôm nay không có sinh nhật
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

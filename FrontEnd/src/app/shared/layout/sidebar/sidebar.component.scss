@@ -1,0 +1,52 @@
+@import "src/app/styles/colors";
+@import "src/app/styles/font";
+@import "src/app/styles/variables";
+.nav {
+    background-color: #1a1a1a;
+    width: 240px;
+    height: 100vh;
+    border-right: 1px solid #FFFFFF;
+    .nav-item {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        display: flex;
+        img {
+            margin: 0 30px;
+        }
+        .nav-head {
+            margin-bottom: 20px;
+            color: $white;
+            width: 200px;
+            height: 57px !important;
+            display: flex;
+            align-items: center;
+            border-radius: 25px;
+            font-size: 16px;
+            position: relative;
+            cursor: pointer;
+            &:hover {
+                background: $white-35 !important;
+            }
+            .nav-link {
+                width: 295px;
+                height: 58px;
+                display: flex;
+                align-items: center;
+                img {
+                    margin: 0 30px;
+                    width: 18%;
+                }
+            }
+        }
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+    .selected {
+        background: $white-35;
+    }
+}

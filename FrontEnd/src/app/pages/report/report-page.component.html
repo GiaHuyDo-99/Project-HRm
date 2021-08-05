@@ -1,0 +1,130 @@
+<div class="hrm-report-page"   id="pdfTable" #pdfTable>
+    <div class="hrm-title-page-report" >
+        <div>Report</div>
+        <div>
+          <button class="btn btn-primary" (click)="downloadAsPDF()">Export To PDF</button>
+        </div>
+    </div>
+    <div style="width:100%; height: 45vh;">
+        <canvas #barChart ></canvas>
+    </div>
+    <div class="row">
+        <div class=" col-lg-6 col-md-12">
+            <div class=" card">
+              <div class=" card-header">
+                <h4 class=" card-title">Employee Table</h4>
+              </div>
+              <div class=" card-body">
+                <div class=" table-responsive">
+                  <table class="hrm-table-report" id="">
+                    <thead class=" text-primary">
+                      <tr>
+                        <th>Tên</th>
+                        <th>Vị trí</th>
+                        <th>Email</th>
+                        <th>Địa chỉ</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor = "let employee of employees">
+                          <td>{{ employee.lastName}}</td>
+                          <td>{{employee.role}}</td>
+                          <td>{{ employee.emailId }}</td>
+                          <td >{{ employee.address }}</td>
+                        </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-lg-6 col-md-12">
+            <div class=" card">
+              <div class=" card-header">
+                <h4 class=" card-title">Salary Table</h4>
+              </div>
+              <div class=" card-body">
+                <div class=" table-responsive">
+                  <table class="hrm-table-report">
+                    <thead class=" text-primary">
+                      <tr>
+                        <th>Tên</th>
+                        <th>Lương cơ bản</th>
+                        <th>Lương thưởng</th>
+                        <th>Tổng lương</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr  *ngFor = "let i of salary">
+                        <td>{{i.lastName}}</td>
+                        <td> {{ i.basicSalary }} </td>
+                        <td > {{ i.bonusSalary }} </td>
+                        <td> {{ i.totalSalary }} </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="row">
+      <div class=" col-lg-6 col-md-12">
+        <div class=" card">
+          <div class=" card-header">
+            <h4 class=" card-title">Workday Table</h4>
+          </div>
+          <div class=" card-body">
+            <div class=" table-responsive">
+              <table class="hrm-table-report" id="">
+                <thead class=" text-primary">
+                  <tr > 
+                    <th>Tên</th>
+                    <th>Công chuẩn</th>
+                    <th>Công thực</th>
+                    <th >Nghỉ phép</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor = "let i of workdays">
+                    <td> {{i.fullName}}</td>
+                    <td>{{i.basicWorkday}}</td>
+                    <td>{{i.actualWorkday}}</td>
+                    <td>{{i.leaveDay}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" col-lg-6 col-md-12">
+        <div class=" card">
+          <div class=" card-header">
+            <h4 class=" card-title">Employee Leave Table</h4>
+          </div>
+          <div class=" card-body">
+            <div class=" table-responsive">
+              <table class="hrm-table-report">
+                <thead class=" text-primary">
+                  <tr>
+                    <th>Tên</th>
+                    <th>Ngày</th>
+                    <th>Lý do</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr  *ngFor = "let i of employeeLeave">
+                    <td> {{i.fullName}}</td>
+                    <td>{{i.content}}</td>
+                    <td>{{i.time}}</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>

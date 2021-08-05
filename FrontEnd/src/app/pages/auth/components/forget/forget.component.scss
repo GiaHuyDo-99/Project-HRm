@@ -1,0 +1,56 @@
+.forget-password {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/assets/svg/hrm-bg-login.svg");
+    background-size: cover;
+    .forget-password-form {
+        width: 765px;
+        height: 373px;
+        background-color: #292929;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 20px;
+        .forget-password-form-header {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            img {
+                outline: none;
+            }
+        }
+        .take-email {
+            font-size: 14px;
+            color: #ffffff;
+            font-family: Nunito;
+        }
+        .form-email {
+            color: #ffffff;
+            display: flex;
+            border: 1px solid #f0de9f;
+            border-radius: 20px;
+            padding: 15px 10px;
+            margin: 20px 0;
+            margin-left: -16px;
+            input {
+                width: 300px;
+                color: #ffffff;
+                background-color: #292929;
+                margin-left: 100px;
+            }
+        }
+        .btn-send {
+            display: flex;
+            justify-content: center;
+            button {
+                outline: none;
+                cursor: pointer;
+            }
+        }
+    }
+}

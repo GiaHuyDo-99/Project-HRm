@@ -1,0 +1,33 @@
+<div class="forget-password">
+    <div class="logo">
+        <img src="assets/svg/hrm-logo.svg">
+    </div>
+    <div class="forget-password-form">
+        <div class="forget-password-form-header">
+            <img
+                src="assets/svg/hrm-close.svg"
+                routerLink="/login"
+            />
+        </div>
+        <div class="forget-password-form-content">
+            <div class="take-email">Nhập email để lấy lại mật khẩu</div>
+            <div class="form-email">
+                <label for="fname">
+                    <img src="assets/svg/hrm-mail.svg" /> Email </label>
+                <br />
+                <input
+                    type="text"
+                    class="hrm-input-take-email"
+                    [(ngModel)]="model.email"
+                />
+                <br />
+            </div>
+            <div class="btn-send">
+                <button
+                    class="hrm-btn-send"
+                    (click)="onSendResetPasswork()"
+                >Gửi</button>
+            </div>
+        </div>
+    </div>
+</div>

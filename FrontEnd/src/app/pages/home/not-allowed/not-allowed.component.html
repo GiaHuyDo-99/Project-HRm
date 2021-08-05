@@ -1,0 +1,331 @@
+<div class="title-page" routerLink="/home">
+
+    <span class="material-icons keybroad"> keyboard_arrow_left </span>
+
+    <div>Nghỉ không phép</div>
+</div>
+<div class="container-pages">
+    <div class="list-icon-employee">
+        <div class="workday-select-month">
+            <div class="workday-title-month">
+                <p>Tháng</p>
+            </div>
+            <!-- <input type="date" id="date" name="date"> -->
+            <mat-form-field appearance="fill">
+                <input matInput [matDatepicker]="picker">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker panelClass="datepickerOne"></mat-datepicker>
+            </mat-form-field>
+        </div>
+    </div>
+    <div>
+        <div class="mat-elevation-z8">
+            <mat-table [dataSource]="dataSource" *ngFor="let table of tables">
+                <ng-container matColumnDef="name" [sticky]="true">
+                    <mat-header-cell *matHeaderCellDef> Tên </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <img [src]="element.name.img" alt="">
+                        <p>{{element.name.title}}</p>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="total" [sticky]="true">
+                    <mat-header-cell *matHeaderCellDef> Tổng </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{element.total}} </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day1">
+                    <mat-header-cell *matHeaderCellDef> 1 </mat-header-cell>
+
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day1.title">
+                            <p>{{element.day1.title}}</p>
+
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day2">
+                    <mat-header-cell *matHeaderCellDef> 2 </mat-header-cell>
+
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day2.title">
+                            <p>{{element.day2.title}}</p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day3">
+                    <mat-header-cell *matHeaderCellDef> 3 </mat-header-cell>
+
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day3.title">
+                            <p>{{element.day3.title}}</p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day4">
+                    <mat-header-cell *matHeaderCellDef> 4 </mat-header-cell>
+
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day4.title">
+                            <p>{{element.day4.title}}</p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day5">
+                    <mat-header-cell *matHeaderCellDef> 5 </mat-header-cell>
+
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day5.title">
+                            <p>{{element.day5.title}}</p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day6">
+                    <mat-header-cell *matHeaderCellDef> 6 </mat-header-cell>
+
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day6.title">
+                            <p>{{element.day6.title}}</p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day7">
+                    <mat-header-cell *matHeaderCellDef> 7 </mat-header-cell>
+
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day7.title">
+                            <p>{{element.day7.title}} </p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day8">
+                    <mat-header-cell *matHeaderCellDef> 8 </mat-header-cell>
+
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day8.title">
+                            <p>{{element.day8.title}}</p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day9">
+                    <mat-header-cell *matHeaderCellDef> 9 </mat-header-cell>
+
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day9.title">
+                            <p>{{element.day9.title}}</p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day10">
+                    <mat-header-cell *matHeaderCellDef> 10 </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day10.title">
+                            <p>{{element.day10.title}}</p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day11">
+                    <mat-header-cell *matHeaderCellDef> 11 </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day11.title">
+                            <p>{{element.day11.title}}</p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day12">
+                    <mat-header-cell *matHeaderCellDef> 12 </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day12.title">
+                            <p>{{element.day12.title}}</p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day13">
+                    <mat-header-cell *matHeaderCellDef> 13 </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day13.title">
+                            <p>{{element.day13.title}}</p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day14">
+                    <mat-header-cell *matHeaderCellDef> 14 </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day14.title">
+                            <p>{{element.day14.title}}</p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day15">
+                    <mat-header-cell *matHeaderCellDef> 15 </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day15.title">
+                            <p>{{element.day15.title}}</p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day16">
+                    <mat-header-cell *matHeaderCellDef> 16 </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day16.title">
+                            <p>{{element.day16.title}}</p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day17">
+                    <mat-header-cell *matHeaderCellDef> 17 </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day17.title">
+                            <p>{{element.day17.title}}</p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day18">
+                    <mat-header-cell *matHeaderCellDef> 18 </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day18.title">
+                            <p>{{element.day18.title}}</p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day19">
+                    <mat-header-cell *matHeaderCellDef> 19 </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day19.title">
+                            <p>{{element.day19.title}}</p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day20">
+                    <mat-header-cell *matHeaderCellDef> 20 </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day20.title">
+                            <p>{{element.day20.title}}</p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day21">
+                    <mat-header-cell *matHeaderCellDef> 21 </mat-header-cell>
+
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day21.title">
+                            <p>{{element.day21.title}}</p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day22">
+                    <mat-header-cell *matHeaderCellDef> 22 </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day22.title">
+                            <p>{{element.day22.title}}</p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day23">
+                    <mat-header-cell *matHeaderCellDef> 23 </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day23.title">
+                            <p>{{element.day23.title}}</p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day24">
+                    <mat-header-cell *matHeaderCellDef> 24 </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day24.title">
+                            <p>{{element.day24.title}}</p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day25">
+                    <mat-header-cell *matHeaderCellDef> 25 </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day25.title">
+                            <p>{{element.day25.title}} </p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day26">
+                    <mat-header-cell *matHeaderCellDef> 26 </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day26.title">
+                            <p>{{element.day26.title}}</p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day27">
+                    <mat-header-cell *matHeaderCellDef> 27 </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day27.title">
+                            <p>{{element.day27.title}}</p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day28">
+                    <mat-header-cell *matHeaderCellDef> 28 </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day28.title">
+                            <p>{{element.day28.title}} </p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day29">
+                    <mat-header-cell *matHeaderCellDef> 29 </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day29.title">
+                            <p>{{element.day29.title}}</p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day30">
+                    <mat-header-cell *matHeaderCellDef> 30 </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day30.title">
+                            <p>{{element.day30.title}}</p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="day31">
+                    <mat-header-cell *matHeaderCellDef> 31 </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <div class="content" *ngIf="element.day31.title">
+                            <p>{{element.day31.title}}</p>
+                        </div>
+                    </mat-cell>
+                </ng-container>
+                <mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></mat-header-row>
+                <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+            </mat-table>
+        </div>
+    </div>
+</div>

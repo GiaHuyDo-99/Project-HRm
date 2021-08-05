@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="_chevron_right" data-name=" chevron_right" transform="translate(0 24) rotate(-90)">
+    <rect id="Path" width="24" height="24" fill="rgba(0,0,0,0)"/>
+    <path id="Icon" d="M1.7.284l4.59,4.59a1,1,0,0,1,0,1.41L1.7,10.874a1,1,0,0,1-1.41-1.41l3.88-3.88L.292,1.7A1,1,0,0,1,1.7.284Z" transform="translate(8.997 6.416)" fill="#fff"/>
+  </g>
+</svg>

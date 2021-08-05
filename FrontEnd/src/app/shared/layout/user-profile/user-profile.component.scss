@@ -1,0 +1,31 @@
+.box-profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .content{
+        width: 70%;
+        text-align: end;
+        p{
+            font-size: 16px;
+            color: white;
+            font-weight: bold;
+            margin: 0;
+        }
+        span{
+            color: #707070;
+        }
+    }
+    .img{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 10px;
+        img{
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    }
+}

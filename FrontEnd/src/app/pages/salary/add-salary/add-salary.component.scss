@@ -1,0 +1,60 @@
+.number-account {
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 15px;
+}
+.number-add-salary {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+.delete-add-salary {
+    margin-right: 20px;
+}
+.overall-details {
+    width: 100%;
+    height: 50px;
+    background-color: #292929;
+    margin-top: 1em;
+    border-radius: 20px;
+}
+.details-setup {
+    display: flex;
+    padding: 14px;
+}
+.title-setup-workday {
+    color: white;
+    font-size: 16px;
+    width: 20%;
+}
+
+.info-settup-workday {
+    width: 85%;
+}
+
+.hr-salary {
+    background-color: #292929;
+}
+.add-new-plus-salary {
+    color: white;
+    text-align: end;
+    margin-top: 1em;
+}
+.a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.b {
+    display: flex;
+    justify-content: space-around;
+    color: #292929;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 45px;
+    width: 480px;
+    height: 56px;
+    border-radius: 20px;
+    background-color: #93bc6f;
+    background-image: linear-gradient(to right, #93bc6f, #b1b963);
+}

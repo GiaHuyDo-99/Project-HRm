@@ -1,0 +1,24 @@
+.page-layout {
+    display: flex;
+    .w-100 {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        background-color: #1A1A1A;
+        padding: 40px;
+        @media screen and(max-width: 1919px) {
+            padding: 20px;
+        }
+    }
+    .profile{
+        position: absolute;
+        z-index: 2;
+        width: 250px;
+        height: 65px;
+        background-color: #292929;
+        position: fixed;
+        top: 40px;
+        right: 40px;
+        border-radius: 30px;
+    }
+}

@@ -1,0 +1,79 @@
+<!-- <div class="container col-lg-6">
+    <h1 class="text-center">Login</h1>
+    <div class="card">
+      <div class="card-body">
+        <form class="form-group">
+          <div class="alert alert-warning" *ngIf='invalidLogin'>{{errorMessage}}</div>
+          <div class="alert alert-success" *ngIf='loginSuccess'>{{successMessage}}</div>
+          <div class="form-group">
+            <label for="email">User Name :</label>
+            <input type="text" class="form-control" id="username" [(ngModel)]="username" placeholder="Enter User Name"
+              name="username">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" [(ngModel)]="password" id="password" placeholder="Enter password"
+              name="password">
+          </div>
+          <button (click)=handleLogin() class="btn btn-success">Login</button>
+        </form>
+      </div>
+    </div>
+  </div> -->
+
+
+  <div class="login">
+    <div class="login-box">
+        <div class="login-box-logo">
+          <h1 class="text-center">Login</h1>
+            <!-- <img src="assets/svg/hrm-logo.svg"> -->
+        </div>
+        <div class="login-box-form">
+            <div class="login-box-form-input">
+                <label
+                    class="form-input-label"
+                    for="email"
+                >
+                    <img
+                        class="form-input-label-img"
+                        src="assets/svg/hrm-user.svg"
+                        alt=""
+                    >User Name</label>
+
+                <input type="text" class="form-input-input" id="username" [(ngModel)]="username" placeholder="Enter User Name"
+                name="username">
+            </div>
+            <div class="login-box-form-input">
+                <label
+                    class="form-input-label"
+                    for="password"
+                >
+                    <img
+                        class="form-input-label-img"
+                        src="assets/svg/hrm-password.svg"
+                        alt=""
+                    >Password</label>
+
+                <input type="password"  class="form-input-input" [(ngModel)]="password" id="password"   placeholder="*** *** ***"
+                name="password">
+            </div>
+
+            <div class="login-box-form-btn">
+                <button
+                    class="hrm-btn-send"
+                    (click)=handleLogin()
+                >
+                    Đăng nhập
+                </button>
+            </div>
+            <div
+                class="login-box-link"
+                routerLink="/forget"
+            >
+                <div class="t-g-green">
+                    Quên mật khẩu
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

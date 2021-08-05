@@ -1,0 +1,170 @@
+.hrm-table {
+    width: 100%;
+    margin-top: 1em;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border-collapse: collapse;
+    td,
+    th {
+        padding-bottom: 1%;
+        text-align: center;
+    }
+    .th-title-table {
+        border-right: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+        padding: 10px;
+    }
+    .col-span {
+        border-top: 2px solid #ffffff;
+    }
+    th {
+        opacity: 50%;
+    }
+    &-employee {
+        th {
+            opacity: 50%;
+        }
+    }
+    &-workday {
+        th {
+            opacity: 50%;
+        }
+    }
+    &-salary {
+        .plus-before-tax {
+            color: #95bc6e;
+            opacity: 100%;
+        }
+        .plus-after-tax {
+            color: #d15151;
+            opacity: 100%;
+        }
+        .overall-salary {
+            color: #ffffff;
+            opacity: 100%;
+        }
+        .access {
+            border-right: 2px solid white;
+        }
+        td,
+        th {
+            opacity: 50%;
+        }
+    }
+    &-left-early {
+        col:nth-child(2n + 1) {
+            background-color: #292929;
+        }
+        .tr-title-table {
+            background-color: black;
+        }
+        th {
+            background-color: black;
+        }
+        .first-column {
+            background-color: black;
+        }
+
+        .third-column {
+            background-color: black;
+        }
+        td {
+            width: 84px;
+        }
+        .go-late {
+            color: #ffffff;
+            opacity: 50%;
+        }
+    }
+    &-not-allowed {
+        col:nth-child(2n + 1) {
+            background: #292929;
+        }
+        .tr-title-table {
+            background-color: black;
+        }
+        th {
+            background-color: black;
+        }
+        .first-column {
+            background-color: black;
+        }
+
+        .third-column {
+            background-color: black;
+        }
+        td {
+            width: 84px;
+        }
+    }
+    &-allowed {
+        col:nth-child(2n + 1) {
+            background: #292929;
+        }
+        .tr-title-table {
+            background-color: black;
+        }
+        th {
+            background-color: black;
+        }
+        .first-column {
+            background-color: black;
+        }
+
+        .third-column {
+            background-color: black;
+        }
+        td {
+            width: 84px;
+        }
+    }
+    &-home-page {
+        td {
+            opacity: 80%;
+        }
+    }
+}
+.hrm-details-table {
+    &-left-early {
+        background-color: #af6bad;
+        border: 1px solid #707070;
+    }
+    &-not-allowed {
+        background-color: #c9785f;
+        border: 1px solid #707070;
+    }
+    &-allowed {
+        background-color: #6b8faf;
+        border: 1px solid #707070;
+    }
+}
+.hrm-table-report {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border-collapse: collapse;
+    td,
+    th {
+        padding-bottom: 2%;
+        text-align: center;
+        color: #ffffff;
+    }
+    .th-title-table {
+        border-right: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+        padding: 10px;
+    }
+    .col-span {
+        border-top: 2px solid #ffffff;
+    }
+    th {
+        opacity: 50%;
+        border-bottom: 1px solid #ffffff;
+    }
+}

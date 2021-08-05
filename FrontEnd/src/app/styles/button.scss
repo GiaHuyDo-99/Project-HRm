@@ -1,0 +1,166 @@
+.hrm-btn {
+    &-confirm {
+        background-color: #93bc6f;
+        height: 35px;
+        line-height: 35px;
+        border-radius: 20px;
+    }
+    &-Notconfirm {
+        background-color: #292929;
+        height: 35px;
+        line-height: 35px;
+        border-radius: 20px;
+        color: #f0de9f;
+        border: 1px solid #f0de9f;
+    }
+    &-home-cancel {
+        background-color: #c9785f;
+        height: 35px;
+        line-height: 35px;
+        border-radius: 20px;
+    }
+    &-create {
+        border: none;
+        border-radius: 25px;
+        width: 15%;
+        height: 40px;
+        background-color: #c5ae38;
+        background-image: linear-gradient(to right, #c5ae38, #dcd860);
+        color: #242424;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    &-cancel-employee {
+        width: 15%;
+        height: 40px;
+        background-color: #1a1a1a;
+        border-radius: 25px;
+        border: none;
+        color: #f0de9f;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    &-excel {
+        width: 150px;
+        height: 40px;
+        background-color: #1a1a1a;
+        border-radius: 25px;
+        border: 1px solid #f0de9f;
+        color: #f0de9f;
+        font-size: 14px;
+        font-weight: bold;
+
+        margin-right: 1em;
+    }
+    &-account-salary {
+        border: none;
+        border-radius: 25px;
+        width: 150px;
+        height: 40px;
+        background-image: linear-gradient(to right, #F0DE9F, #786F50);
+        color: #242424;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    &-setup-workday {
+        border: none;
+        border-radius: 25px;
+        width: 150px;
+        height: 40px;
+        background-color: #c5ae38;
+        background-image: linear-gradient(to right, #c5ae38, #dcd860);
+        color: #242424;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    &-confirm-salary {
+        width: 180px;
+        height: 44px;
+        background-color: #c5ae38;
+        background-image: linear-gradient(to right, #c5ae38, #dcd860);
+        text-align: center;
+        border-radius: 20px;
+        line-height: 40px;
+        color: #292929;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    &-employee {
+        justify-content: flex-end;
+        display: flex;
+    }
+    &-delelte-account {
+        height: 36px;
+        width: 75%;
+        background-image: linear-gradient(to right, #f0de9f, #786f50);
+        text-align: center;
+        line-height: 35px;
+        border-radius: 20px;
+        color: #1b1b1b;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 2em auto;
+    }
+    &-lock-account {
+        height: 36px;
+        width: 75%;
+        color: #f0de9f;
+        border: 1px solid #f0de9f;
+        text-align: center;
+        line-height: 35px;
+        border-radius: 20px;
+        // margin-top: 1em;
+        // margin-left: 1em;
+        margin: 0 auto;
+        background-color: #292929;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    &-contact {
+        width: 186px;
+        font-size: 14px;
+        height: 34px;
+        background-color: #292929;
+        color: #f0de9f;
+        text-align: center;
+        border-radius: 20px;
+        border: 1px solid #f0de9f;
+        margin-top: 2em;
+        line-height: 30px;
+    }
+    &-send {
+        width: 180px;
+        height: 44px;
+        background-color: #93bc6f;
+        background-image: linear-gradient(to right, #93bc6f, #b1b963);
+        border-radius: 20px;
+        font-size: 16px;
+
+        font-weight: bold;
+        outline: none;
+        border: none;
+    }
+    &-login {
+        width: 180px;
+        height: 44px;
+        color: #292929;
+        font-size: 16px;
+
+        font-weight: bold;
+        background-color: #93bc6f;
+        background-image: linear-gradient(to right, #93bc6f, #b1b963);
+        border-radius: 20px !important;
+    }
+    &-forget-password {
+        background: -webkit-linear-gradient(#93bc6f, #b1b963);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 16px;
+    }
+}
+
+.t-g-green {
+    background: -webkit-linear-gradient(#93bc6f, #b1b963);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

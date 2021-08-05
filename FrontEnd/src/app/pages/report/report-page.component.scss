@@ -1,0 +1,18 @@
+.hrm-report-page {
+    overflow: auto;
+    height: 92vh;
+    .hrm-title-page-report{
+        display: flex;
+        justify-content: space-between;
+        font-size: 32px;
+    font-weight: bold;
+    color: white;
+    }
+    .card {
+        background-color: #1A1A1A;
+        .card-title {
+            color: #ffffff;
+        }
+ 
+    }
+}

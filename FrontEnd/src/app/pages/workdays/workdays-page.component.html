@@ -1,0 +1,74 @@
+<div class="hrm-workdays">
+    <div class="title-page">
+        <div class="item-title">Công</div>
+        <div class="search w-50">
+            <input
+                type="search"
+                class="hrm-input-search"
+                placeholder="Tìm kiếm..."
+            />
+            <img src="assets/svg/hrm-icon-search.svg" />
+        </div>
+    </div>
+    <div class="container-pages">
+        <div class="list-icon-employee">
+            <div class="workday-select-month">
+                <span>Tháng</span>
+                <div>
+                    <input
+                        type="month"
+                        class="hrm-input-date"
+                       
+                       
+                    />
+                </div>
+            </div>
+            <div
+                class="workday-img-month"
+                (click)="openDialog()"
+            >
+                <img src="assets/svg/green-dot.svg" />
+            </div>
+            <div class="workday-btn">
+                <button class="hrm-btn-excel" (click)="exportexcel()">Xuất excel</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <table class="hrm-table hrm-table-workday" id="excel-table">
+            <thead>
+                <tr>
+                    <th class="th-title-table">Tên</th>
+                    <th class="th-title-table">Mã NV</th>
+                    <th class="th-title-table">Công chuẩn</th>
+                    <th class="th-title-table">Công thực</th>
+                    <th class="th-title-table">Nghỉ phép</th>
+                    <th class="th-title-table">Nghỉ ko lương</th>
+                    <th class="th-title-table">Công lễ</th>
+                    <th class="th-title-table">Sớm, muộn</th>
+                    <th class="th-title-table">Công OT</th>
+                    <th class="th-title-table">Số phép còn</th>
+                    <th  class="th-title-table"> Actions </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor = "let i of workdays" >
+                    <td> {{i.fullName}}</td>
+                    <td>{{i.employeeID}}</td>
+                    <td>{{i.basicWorkday}}</td>
+                    <td>{{i.actualWorkday}}</td>
+                    <td>{{i.leaveDay}}</td>
+                    <td>{{i.unpaidLeaveDay}}</td>
+                    <td>{{i.restWorkday}}</td>
+                    <td>{{i.earlyLate}}</td>
+                    <td>{{i.workdayOT}}</td>
+                    <td>{{i.restLeave}}</td>
+    
+                    <td>
+                        <button (click) = "deleteWorkday(i.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

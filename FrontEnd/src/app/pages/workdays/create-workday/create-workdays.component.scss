@@ -1,0 +1,27 @@
+.hrm-create-workday {
+    padding: 30px;
+    .title-workday {
+        color: white;
+    }
+    .close-dialog {
+        text-align: right;
+    }
+    .content {
+        margin-top: 20px;
+        background-color: #292929;
+        border-radius: 15px;
+        padding: 20px;
+        .label-workday {
+            color: white;
+        }
+        .icon {
+            text-align: right;
+        }
+    }
+    .btn-group{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,262 @@
+.hrm-home-page {
+    .header {
+        display: flex;
+        flex-direction: row;
+        margin-top: 35px;
+        height: 30%;
+        justify-content: space-between;
+    }
+    .col-left {
+        display: flex;
+        padding: 60px 90px;
+        background-color: #292929;
+        border-radius: 25px;
+        .overall {
+            width: 40%;
+            color: #ffffff;
+            align-self: center;
+            .title {
+                font-size: 32px;
+                color: #ffffff;
+                font-weight: bold;
+            }
+            ul {
+                margin: 20px 0;
+                padding: 0 15px;
+                li {
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+    .col-right {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        tbody {
+            display: block;
+            height: 370px;
+            overflow: auto;
+            table-layout: fixed;
+        }
+        th {
+            width: 100%;
+        }
+        thead,
+        tr {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+        }
+        .birthday-content {
+            border-radius: 20px;
+            background-color: #292929;
+            color: white;
+            text-align: center;
+        }
+    }
+    .logo {
+        width: 100%;
+    }
+    .name-company {
+        width: 367px;
+        background-color: transparent;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .dashboard {
+        width: 367px;
+        height: 240px;
+        padding: 24px;
+        border-radius: 25px;
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+    .leave-early {
+        background-image: url("/assets/svg/hrm-bg-tle.svg");
+    }
+    .not-allowed {
+        background-image: url("/assets/svg/hrm-bg-ua.svg");
+    }
+    .allowed {
+        background-image: url("/assets/svg/hrm-bg-allowed.svg");
+    }
+    .details-title {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+    .text-title {
+        color: white;
+        font-size: 1vw;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-top: 2px;
+    }
+    .text-by-date {
+        color: white;
+        font-size: 1vw;
+        font-weight: bold;
+    }
+    .text-date {
+        color: #707070;
+        font-family: Nunito;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .by-date {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        border-color: white;
+        border-radius: 20px;
+        border: 3px solid white;
+        justify-content: space-evenly;
+        line-height: 45px;
+    }
+    .text-media {
+        color: white;
+        font-family: Nunito;
+        font-size: 1.5vw;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+    .number-employee {
+        color: white;
+        margin-top: 2.5em;
+        font-weight: 500;
+        font-size: 2vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .avatar {
+        width: 13%;
+    }
+    .title-page {
+        height: 60px;
+    }
+}
+@media screen and (max-width: 1919px) {
+    .hrm-home-page {
+        .hrm-title-page {
+            font-size: 26px;
+        }
+        .container-pages {
+            .header {
+                margin-top: 10px;
+                .dashboard {
+                    width: 280px;
+                    height: 200px;
+                }
+                .name-company {
+                    width: 280px;
+                    height: 200px;
+                    .logo {
+                        width: 80%;
+                    }
+                }
+            }
+            .row {
+                margin-left: 0;
+                margin-right: 0;
+                .col-right {
+                    tbody {
+                        height: unset;
+                    }
+                }
+                .col-left {
+                    padding: 30px;
+                    border-radius: 25px;
+                    img {
+                        width: 60%;
+                    }
+                    .overall {
+                        .title {
+                            font-size: 26px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1367px) {
+    .hrm-home-page {
+        .hrm-title-page {
+            font-size: 26px;
+        }
+        .container-pages {
+            .header {
+                margin-top: 10px;
+                .dashboard {
+                    width: 260px;
+                    height: 200px;
+                }
+                .name-company {
+                    width: 260px;
+                    height: 200px;
+                    .logo {
+                        width: 80%;
+                    }
+                }
+            }
+            .row {
+                margin-left: 0;
+                margin-right: 0;
+                .col-right {
+                    tbody {
+                        height: unset;
+                    }
+                }
+                .col-left {
+                    padding: 30px;
+                    border-radius: 25px;
+                    img {
+                        // width: 50%;
+                    }
+                    .overall {
+                        .title {
+                            font-size: 26px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1281px) {
+    .hrm-home-page {
+        .container-pages {
+            .header {
+                .dashboard {
+                    width: 240px;
+                    height: 180px;
+                }
+                .name-company {
+                    width: 240px;
+                    height: 180px;
+                    .text-media {
+                        font-size: 18px;
+                    }
+                }
+            }
+            .row {
+                .col-left {
+                    img {
+                        width: 50%;
+                    }
+                    .overall {
+                        width: 60%;
+                        .title {
+                            font-size: 26px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

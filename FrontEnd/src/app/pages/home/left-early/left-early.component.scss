@@ -1,0 +1,218 @@
+.title-page {
+    &:focus {
+        outline: none;
+    }
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    span {
+        margin-right: 20px;
+    }
+    font-style: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.datepickerOne {
+    background: #1A1A1A;
+}
+
+::ng-deep .mat-calendar-table {
+    background: #ffffff;
+}
+
+::ng-deep .container-pages {
+    .list-icon-employee {
+        .workday-select-month {
+            width: 266px;
+            height: 56px;
+            border-radius: 20px;
+            background-color: #292929;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            p {
+                margin: 0;
+                font-size: 16px;
+                font-weight: bold;
+                color: #FFFFFF;
+                margin-right: 20px;
+            }
+        }
+        .mat-form-field-appearance-fill .mat-form-field-infix {
+            width: 100px;
+            color: #F0DE9F;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button .mat-datepicker-toggle-default-icon {
+            color: #ffffff;
+        }
+    }
+}
+
+.example-container {
+    height: 70vh;
+    overflow: auto;
+}
+
+.mat-table {
+    overflow: auto;
+    max-height: 78vh;
+    max-width: 85vw;
+    background: #1A1A1A;
+}
+
+.mat-column-name {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    flex-direction: row !important;
+    min-width: 250px !important;
+    color: #a1a1a1 !important;
+    font-size: 16px;
+    font-weight: bold;
+    img {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+}
+
+.mat-column-total {
+    min-width: 100px !important;
+}
+
+.mat-column-day2 {
+    background-color: #222222;
+}
+
+.mat-column-day4 {
+    background-color: #222222;
+}
+
+.mat-column-day6 {
+    background-color: #222222;
+}
+
+.mat-column-day8 {
+    background-color: #222222;
+}
+
+.mat-column-day10 {
+    background-color: #222222;
+}
+
+.mat-column-day12 {
+    background-color: #222222;
+}
+
+.mat-column-day14 {
+    background-color: #222222;
+}
+
+.mat-column-day16 {
+    background-color: #222222;
+}
+
+.mat-column-day18 {
+    background-color: #222222;
+}
+
+.mat-column-day20 {
+    background-color: #222222;
+}
+
+.mat-column-day22 {
+    background-color: #222222;
+}
+
+.mat-column-day24 {
+    background-color: #222222;
+}
+
+.mat-column-day26 {
+    background-color: #222222;
+}
+
+.mat-column-day28 {
+    background-color: #222222;
+}
+
+.mat-column-day30 {
+    background-color: #222222;
+}
+
+.mat-table-sticky {
+    p {
+        color: #a1a1a1 !important;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    background: #1A1A1A !important;
+    opacity: 1;
+    color: #a1a1a1 !important;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 84px;
+    min-height: 64px;
+}
+
+.mat-header-cell {
+    background-color: #1A1A1A !important;
+    color: #a1a1a1 !important;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 84px;
+}
+
+.mat-cell {
+    border-right: 1px solid #1A1A1A;
+    min-height: 64px;
+}
+
+mat-row {
+    border-bottom: none;
+}
+
+.mat-cell {
+    .content {
+        min-width: 84px;
+        min-height: 64px;
+        box-sizing: border-box;
+        background-image: linear-gradient(#AF6BAD, #7F4CB1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p:first-child {
+            font-size: 16px;
+            font-weight: bold;
+            color: #d6d6d6;
+            margin: 0;
+        }
+        p:last-child {
+            font-size: 16px;
+            font-weight: bold;
+            color: #FFFFFF;
+            margin: 0;
+        }
+    }
+}
+
+.mat-header-row,
+.mat-footer-row,
+.mat-row {
+    min-width: 2987px;
+    /* 24 columns, 80px each */
+}
